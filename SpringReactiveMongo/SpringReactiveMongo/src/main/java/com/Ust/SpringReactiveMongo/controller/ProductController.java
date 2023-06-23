@@ -15,7 +15,7 @@ public class ProductController {
     @Autowired
     private ProductService service;
 
-    @GetMapping
+    @GetMapping("/all")
     public Flux<ProductDto> getProduct(){
         return service.getProducts();
     }
